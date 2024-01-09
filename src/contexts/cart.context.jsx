@@ -13,7 +13,8 @@ const addCartItem = (cartItems, productToAdd) => {
             : cartItem
 		)
 	}
-
+	
+	// assuming the basket is empty
 	// return new array with modified cartItems/ new cart item
 	return [...cartItems, { ...productToAdd, quantity: 1 }]
 }
